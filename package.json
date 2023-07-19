@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "nx run-many --target=dev --all",
     "build": "nx run-many --target=build --all",
-    "affected": "nx show projects --affected",
+    "affected": "nx show projects --affected --exclude contential-js",
     "affected:build": "nx affected:build",
     "workspace:dev": "cp pnpm-workspace.dev.yaml pnpm-workspace.yaml",
     "workspace:release": "cp pnpm-workspace.release.yaml pnpm-workspace.yaml",

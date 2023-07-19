@@ -1,5 +1,11 @@
 # contential
 
+## 0.0.35
+
+### Patch Changes
+
+- cb1231e: Testing subpaths
+
 ## 0.0.34
 
 ### Patch Changes

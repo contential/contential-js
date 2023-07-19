@@ -1,3 +1,3 @@
 export function contential(): string {
-  return 'contential 1';
+  return 'contential 2';
 }

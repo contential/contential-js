@@ -14,9 +14,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-
       - name: Fetch main
         run: git fetch origin main
 
@@ -31,7 +28,6 @@ jobs:
         uses: pnpm/action-setup@v2
         with:
           version: 8.x.x
-          run_install: false
 
       - name: Install
         run: pnpm install --frozen-lockfile

@@ -1,5 +1,11 @@
 # @contential/api
 
+## 0.0.11
+
+### Patch Changes
+
+- 79c36a3: Added prompt client to contential
+
 ## 0.0.10
 
 ### Patch Changes

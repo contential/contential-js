@@ -1,5 +1,11 @@
 # contential
 
+## 0.0.36
+
+### Patch Changes
+
+- 54861f9: Testing subpaths
+
 ## 0.0.35
 
 ### Patch Changes

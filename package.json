@@ -5,6 +5,8 @@
   "scripts": {
     "build": "nx run-many --target=build --all",
     "dev": "nx run-many --target=dev --all",
+    "workspace:dev": "cp pnpm-workspace.dev.yaml pnpm-workspace.yaml",
+    "workspace:release": "cp pnpm-workspace.release.yaml pnpm-workspace.yaml",
     "changeset": "changeset",
     "release": "changeset publish"
   },

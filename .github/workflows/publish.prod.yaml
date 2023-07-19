@@ -14,8 +14,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      # - name: Fetch main
-      #   run: git fetch origin main
+        with:
+          fetch-depth: 0
+
+      - name: Fetch main
+        run: git fetch origin main
 
       - name: Use Node 18
         uses: actions/setup-node@v2
@@ -28,12 +31,16 @@ jobs:
         uses: pnpm/action-setup@v2
         with:
           version: 8.x.x
+          run_install: false
 
       - name: Install
         run: pnpm install --frozen-lockfile
 
       - name: Build
         run: pnpm build
+
+      - name: Workspace release file
+        run: pnpm workspace:release
 
       - name: Create release pull request or publish
         id: changesets
@@ -44,9 +51,3 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
-
-      # - name: Affected
-      #   run: pnpm affected --base=origin/production~1 --exclude=apps/*
-
-      # - name: Build
-      #   run: pnpm affected:build --base=origin/production~1 --exclude=apps/* --verbose

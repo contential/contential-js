@@ -8,7 +8,7 @@
       "executor": "@nx/js:tsc",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "packages/contential/dist",
+        "outputPath": "dist/packages/contential",
         "main": "packages/contential/src/index.ts",
         "tsConfig": "packages/contential/tsconfig.lib.json",
         "assets": ["packages/contential/*.md"]

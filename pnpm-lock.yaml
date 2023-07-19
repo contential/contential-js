@@ -31,7 +31,7 @@ importers:
         specifier: 16.5.3
         version: 16.5.3
       '@types/node':
-        specifier: '18'
+        specifier: 18.7.1
         version: 18.7.1
       '@typescript-eslint/eslint-plugin':
         specifier: ^5.60.1
@@ -82,6 +82,8 @@ importers:
   packages/api: {}
 
   packages/contential: {}
+
+  packages/prompt: {}
 
 packages:
 

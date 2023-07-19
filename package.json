@@ -5,6 +5,7 @@
   "scripts": {
     "build": "nx run-many --target=build --all",
     "dev": "nx run-many --target=dev --all",
+    "changeset": "changeset",
     "release": "changeset publish"
   },
   "private": true,

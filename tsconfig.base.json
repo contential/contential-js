@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@contential/api": ["packages/api/src/index.ts"],
+      "@contential/prompt": ["packages/prompt/src/index.ts"],
       "contential": ["packages/contential/src/index.ts"]
     }
   },

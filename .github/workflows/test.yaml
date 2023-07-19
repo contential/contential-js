@@ -41,3 +41,6 @@ jobs:
 
       - name: Build
         run: pnpm affected:build --base=origin/main --verbose
+
+      - name: Test
+        run: pnpm affected:test --base=origin/main --verbose

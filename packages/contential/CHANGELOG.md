@@ -1,5 +1,11 @@
 # contential
 
+## 0.0.33
+
+### Patch Changes
+
+- 8472c5b: Added npmignore
+
 ## 0.0.32
 
 ### Patch Changes

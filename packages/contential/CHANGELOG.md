@@ -1,5 +1,11 @@
 # contential
 
+## 0.0.37
+
+### Patch Changes
+
+- 302663e: Added api client
+
 ## 0.0.36
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # contential
 
+## 0.0.40
+
+### Patch Changes
+
+- decfff4: Updated description
+
 ## 0.0.39
 
 ### Patch Changes

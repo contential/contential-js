@@ -1,5 +1,11 @@
 # contential
 
+## 0.0.41
+
+### Patch Changes
+
+- 79c36a3: Added prompt client to contential
+
 ## 0.0.40
 
 ### Patch Changes

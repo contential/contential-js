@@ -1,5 +1,11 @@
 # contential
 
+## 0.0.39
+
+### Patch Changes
+
+- 5903689: Updated text
+
 ## 0.0.38
 
 ### Patch Changes

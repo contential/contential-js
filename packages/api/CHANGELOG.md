@@ -1,5 +1,11 @@
 # @contential/api
 
+## 0.0.10
+
+### Patch Changes
+
+- 5903689: Updated text
+
 ## 0.0.9
 
 ### Patch Changes

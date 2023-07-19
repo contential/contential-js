@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@contential/api": ["packages/api/src/index.ts"],
       "contential": ["packages/contential/src/index.ts"]
     }
   },

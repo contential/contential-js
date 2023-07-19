@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "dev": "nx run-many --target=dev --all",
-    "test": "nx run-many --target=test --all",
-    "build": "nx run-many --target=build --all",
+    "dev": "nx run-many --target=dev --all --exclude demo*",
+    "test": "nx run-many --target=test --all --exclude demo*",
+    "build": "nx run-many --target=build --all --exclude demo*",
     "affected": "nx show projects --affected --exclude contential-js demo*",
     "affected:build": "nx affected:build --exclude demo*",
     "affected:test": "nx affected:test --exclude demo*",

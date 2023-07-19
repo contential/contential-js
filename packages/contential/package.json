@@ -2,6 +2,10 @@
   "name": "contential",
   "description": "Contential - JavaScript Client",
   "version": "0.0.42",
+  "dependencies": {
+    "@contential/api": "latest",
+    "@contential/prompt": "latest"
+  },
   "typesVersions": {
     "*": {
       "*": [

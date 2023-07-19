@@ -1,5 +1,11 @@
 # contential
 
+## 0.0.38
+
+### Patch Changes
+
+- 70ec8c9: Added internal dependency
+
 ## 0.0.37
 
 ### Patch Changes

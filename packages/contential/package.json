@@ -1,33 +1,5 @@
 {
   "name": "contential",
-  "description": "Contential - JavaScript Client",
-  "version": "0.0.43",
-  "dependencies": {
-    "@contential/api": "latest",
-    "@contential/prompt": "latest"
-  },
-  "typesVersions": {
-    "*": {
-      "*": [
-        "./*"
-      ]
-    }
-  },
-  "exports": {
-    ".": {
-      "types": "./index.d.ts",
-      "import": "./index.js",
-      "require": "./index.js"
-    },
-    "./chat": {
-      "types": "./chat.d.ts",
-      "import": "./chat.js",
-      "require": "./chat.js"
-    },
-    "./prompt": {
-      "types": "./prompt.d.ts",
-      "import": "./prompt.js",
-      "require": "./prompt.js"
-    }
-  }
+  "version": "0.0.1",
+  "type": "commonjs"
 }

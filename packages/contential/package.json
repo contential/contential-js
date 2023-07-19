@@ -1,26 +1,24 @@
 {
   "name": "contential",
+  "description": "Contential",
   "version": "0.0.32",
-  "files": [
-    "dist/*"
-  ],
   "typesVersions": {
     "*": {
       "*": [
-        "dist/*"
+        "./*"
       ]
     }
   },
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "require": "./dist/index.js"
+      "types": "./index.d.ts",
+      "import": "./index.js",
+      "require": "./index.js"
     },
     "./*.js": {
-      "types": "./dist/*.d.ts",
-      "import": "./dist/*.js",
-      "require": "./dist/*.js"
+      "types": "./*.d.ts",
+      "import": "./*.js",
+      "require": "./*.js"
     }
   }
 }

@@ -34,7 +34,7 @@ export default defineConfig({
   build: {
     lib: {
       // Could also be a dictionary or array of multiple entry points.
-      entry: 'src/index.ts',
+      entry: ['src/index.ts', 'src/chat/index.ts'],
       name: 'contential',
       fileName: 'index',
       // Change this to the formats you want to support.

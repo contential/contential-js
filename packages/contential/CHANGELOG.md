@@ -1,5 +1,11 @@
 # contential
 
+## 0.0.42
+
+### Patch Changes
+
+- 0e40154: Added package types to contential
+
 ## 0.0.41
 
 ### Patch Changes

@@ -1,0 +1,38 @@
+{
+  "name": "contential",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/contential/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/contential",
+        "main": "packages/contential/src/index.js",
+        "tsConfig": "packages/contential/tsconfig.lib.json",
+        "assets": ["packages/contential/*.md"]
+      }
+    },
+    "publish": {
+      "command": "node tools/scripts/publish.mjs contential {args.ver} {args.tag}",
+      "dependsOn": ["build"]
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/contential/**/*.js"]
+      }
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "outputs": ["coverage/packages/contential"],
+      "options": {
+        "passWithNoTests": true,
+        "reportsDirectory": "../../coverage/packages/contential"
+      }
+    }
+  },
+  "tags": []
+}

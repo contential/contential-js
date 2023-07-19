@@ -1,3 +1,1 @@
-export const prompt = () => {
-  console.log('prompt ');
-};
+export * from '@contential/prompt';

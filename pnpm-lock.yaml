@@ -150,14 +150,7 @@ importers:
 
   packages/api: {}
 
-  packages/contential:
-    dependencies:
-      '@contential/api':
-        specifier: latest
-        version: link:../api
-      '@contential/prompt':
-        specifier: latest
-        version: link:../prompt
+  packages/contential: {}
 
   packages/prompt: {}
 

@@ -5,15 +5,25 @@
   "projectType": "library",
   "targets": {
     "build": {
-      "executor": "@nx/vite:build",
+      "executor": "@nx/js:tsc",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "packages/contential/dist"
+        "outputPath": "packages/contential/dist",
+        "main": "packages/contential/src/index.ts",
+        "tsConfig": "packages/contential/tsconfig.lib.json",
+        "assets": ["packages/contential/*.md"]
       }
     },
     "publish": {
       "command": "node tools/scripts/publish.mjs contential {args.ver} {args.tag}",
       "dependsOn": ["build"]
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/contential/**/*.ts"]
+      }
     },
     "test": {
       "executor": "@nx/vite:test",
@@ -21,13 +31,6 @@
       "options": {
         "passWithNoTests": true,
         "reportsDirectory": "../../coverage/packages/contential"
-      }
-    },
-    "lint": {
-      "executor": "@nx/linter:eslint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": ["packages/contential/**/*.ts"]
       }
     }
   },

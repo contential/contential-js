@@ -1,6 +1,7 @@
 {
   "name": "contential",
-  "description": "Contential JavaScript",
+  "description": "Contential",
   "version": "0.0.30",
-  "type": "commonjs"
+  "module": "module",
+  "private": false
 }

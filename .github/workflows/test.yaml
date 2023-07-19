@@ -1,0 +1,37 @@
+name: Test
+
+on:
+  pull_request:
+    branches: [tempmain]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Use Node 18
+        uses: actions/setup-node@v2
+        with:
+          node-version: "18"
+          registry-url: "https://registry.npmjs.org"
+
+      - name: Install pnpm
+        id: pnpm-install
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8.x.x
+          run_install: false
+
+      - name: Install
+        run: pnpm install --frozen-lockfile
+
+      - name: Affected
+        run: pnpm affected --base=origin/main --exclude=apps/*
+
+      - name: Build
+        run: pnpm affected:build --base=origin/main --exclude=apps/* --verbose

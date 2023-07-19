@@ -1,11 +1,10 @@
 {
-  "name": "@contential-js/source",
+  "name": "contential-js",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
     "build": "nx run-many --target=build --all",
     "dev": "nx run-many --target=dev --all",
-    "changeset": "changeset",
     "release": "changeset publish"
   },
   "private": true,
@@ -26,10 +25,9 @@
     "nx": "16.5.3",
     "prettier": "^2.6.2",
     "tslib": "^2.6.0",
-    "typescript": "~5.1.3",
+    "typescript": "~5.1.6",
     "verdaccio": "^5.0.4",
     "vite": "~4.3.9",
-    "vite-plugin-dts": "~2.3.0",
     "vite-tsconfig-paths": "~4.2.0",
     "vitest": "~0.32.0"
   },

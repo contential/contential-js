@@ -1,4 +1,4 @@
-name: Publish
+name: Release
 
 on:
   push:
@@ -42,7 +42,7 @@ jobs:
       - name: Workspace release file
         run: pnpm workspace:release
 
-      - name: Create release pull request or publish
+      - name: Create pull request or publish
         id: changesets
         uses: changesets/action@v1
         with:

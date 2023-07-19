@@ -1,5 +1,11 @@
 # contential
 
+## 0.0.43
+
+### Patch Changes
+
+- 6a7450d: Added dependencies
+
 ## 0.0.42
 
 ### Patch Changes

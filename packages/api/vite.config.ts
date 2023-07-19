@@ -6,7 +6,7 @@ import dts from 'vite-plugin-dts';
 import * as path from 'path';
 
 export default defineConfig({
-  cacheDir: '../../node_modules/.vite/contential',
+  cacheDir: '../../node_modules/.vite/api',
 
   plugins: [
     dts({
@@ -34,8 +34,9 @@ export default defineConfig({
   build: {
     lib: {
       // Could also be a dictionary or array of multiple entry points.
-      entry: ['src/index.ts', 'src/api.ts', 'src/prompt.ts'],
-      name: 'contential',
+      entry: 'src/index.ts',
+      name: 'api',
+      fileName: 'index',
       // Change this to the formats you want to support.
       // Don't forget to update your package.json as well.
       formats: ['es', 'cjs'],

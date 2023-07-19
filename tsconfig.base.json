@@ -15,7 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "contential": ["packages/contential/src/index.js"]
+      "@contential/api": ["packages/api/src/index.ts"],
+      "@contential/prompt": ["packages/prompt/src/index.ts"],
+      "contential": ["packages/contential/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

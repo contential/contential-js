@@ -1,0 +1,8 @@
+{
+  "name": "@contential/api",
+  "description": "Contential - API Client",
+  "version": "0.0.11",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts"
+}

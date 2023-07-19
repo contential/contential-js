@@ -1,33 +1,33 @@
 {
-  "name": "contential",
+  "name": "api",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/contential/src",
+  "sourceRoot": "packages/api/src",
   "projectType": "library",
   "targets": {
     "build": {
       "executor": "@nx/vite:build",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/packages/contential"
+        "outputPath": "dist/packages/api"
       }
     },
     "publish": {
-      "command": "node tools/scripts/publish.mjs contential {args.ver} {args.tag}",
+      "command": "node tools/scripts/publish.mjs api {args.ver} {args.tag}",
       "dependsOn": ["build"]
     },
     "test": {
       "executor": "@nx/vite:test",
-      "outputs": ["coverage/packages/contential"],
+      "outputs": ["coverage/packages/api"],
       "options": {
         "passWithNoTests": true,
-        "reportsDirectory": "../../coverage/packages/contential"
+        "reportsDirectory": "../../coverage/packages/api"
       }
     },
     "lint": {
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["packages/contential/**/*.ts"]
+        "lintFilePatterns": ["packages/api/**/*.ts"]
       }
     }
   },

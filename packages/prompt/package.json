@@ -1,8 +1,0 @@
-{
-  "name": "@contential/prompt",
-  "description": "Contential - Prompt Client",
-  "version": "0.0.16",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts"
-}

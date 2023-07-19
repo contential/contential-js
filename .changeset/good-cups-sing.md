@@ -1,5 +1,0 @@
----
-'contential': patch
----
-
-Updated log

@@ -15,10 +15,15 @@
       "import": "./index.js",
       "require": "./index.js"
     },
-    "./*.js": {
-      "types": "./*.d.ts",
-      "import": "./*.js",
-      "require": "./*.js"
+    "./chat": {
+      "types": "./chat.d.ts",
+      "import": "./chat.js",
+      "require": "./chat.js"
+    },
+    "./prompt": {
+      "types": "./prompt.d.ts",
+      "import": "./prompt.js",
+      "require": "./prompt.js"
     }
   }
 }

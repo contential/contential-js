@@ -1,5 +1,11 @@
 # contential
 
+## 0.0.48
+
+### Patch Changes
+
+- 1c53a69: Updated prompt stream
+
 ## 0.0.43
 
 ### Patch Changes

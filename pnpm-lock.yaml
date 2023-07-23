@@ -152,6 +152,8 @@ importers:
 
   dist/packages/contential: {}
 
+  dist/packages/project: {}
+
   dist/packages/prompt: {}
 
 packages:

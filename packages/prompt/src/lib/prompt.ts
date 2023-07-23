@@ -14,7 +14,7 @@ export class ContentialPrompt {
   async prompt(options: PromptOptions) {
     const result = await this.apiClient.stream<{ text: string }>({
       path: '/prompt',
-      data: { prompt: options.prompt },
+      data: { prompt: options.prompt, stream: true },
       onUpdate: options.onUpdate,
     });
 

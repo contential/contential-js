@@ -1,1 +1,3 @@
 # Contential - JavaScript Client
+
+## Example

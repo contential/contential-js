@@ -10,6 +10,7 @@ export type PromptConfig = {
 export interface PromptOptions {
   prompt: string;
   onUpdate: PromptOnUpdate;
+  temperature?: number;
 }
 
 export type PromptOnUpdate = (data: PromptOptionsData) => void;

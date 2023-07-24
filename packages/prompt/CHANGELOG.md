@@ -1,5 +1,11 @@
 # @contential/prompt
 
+## 0.0.18
+
+### Patch Changes
+
+- fb37c15: Added temperature to prompt
+
 ## 0.0.17
 
 ### Patch Changes

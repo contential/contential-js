@@ -1,5 +1,11 @@
 # @contential/prompt
 
+## 0.0.20
+
+### Patch Changes
+
+- 9ea6620: Added metadata to prompt
+
 ## 0.0.19
 
 ### Patch Changes

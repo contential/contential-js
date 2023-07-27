@@ -11,6 +11,8 @@ export interface PromptOptions {
   prompt: string;
   onUpdate: PromptOnUpdate;
   temperature?: number;
+  withoutContext?: boolean;
+  contextMatchesMax?: number;
 }
 
 export type PromptOnUpdate = (data: PromptOptionsData) => void;

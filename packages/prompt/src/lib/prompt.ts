@@ -18,6 +18,8 @@ export class ContentialPrompt {
         prompt: options.prompt,
         temperature: options.temperature,
         stream: true,
+        withoutContext: options.withoutContext,
+        contextMatchesMax: options.contextMatchesMax,
       },
       onUpdate: options.onUpdate,
     });

@@ -20,6 +20,7 @@ export class ContentialPrompt {
         stream: true,
         withoutContext: options.withoutContext,
         contextMatchesMax: options.contextMatchesMax,
+        metadata: options.metadata,
       },
       onUpdate: options.onUpdate,
     });

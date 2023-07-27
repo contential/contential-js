@@ -1,5 +1,11 @@
 # contential
 
+## 0.0.51
+
+### Patch Changes
+
+- 9ea6620: Added metadata to prompt
+
 ## 0.0.50
 
 ### Patch Changes

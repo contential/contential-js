@@ -1,5 +1,11 @@
 # @contential/prompt
 
+## 0.0.19
+
+### Patch Changes
+
+- a9d3bcb: Added withoutContext and contextMatchesMax to prompt
+
 ## 0.0.18
 
 ### Patch Changes

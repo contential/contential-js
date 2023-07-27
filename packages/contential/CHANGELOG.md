@@ -1,5 +1,11 @@
 # contential
 
+## 0.0.50
+
+### Patch Changes
+
+- a9d3bcb: Added withoutContext and contextMatchesMax to prompt
+
 ## 0.0.49
 
 ### Patch Changes

@@ -148,13 +148,11 @@ importers:
         specifier: ~0.32.0
         version: 0.32.0(@vitest/ui@0.32.0)
 
-  dist/packages/api: {}
+  packages/api: {}
 
-  dist/packages/contential: {}
+  packages/contential: {}
 
-  dist/packages/project: {}
-
-  dist/packages/prompt: {}
+  packages/prompt: {}
 
 packages:
 

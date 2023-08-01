@@ -1,5 +1,5 @@
 import { ContentialApi } from '@contential/api';
-import { PromptClientOptions, PromptOptions } from './types';
+import { PromptClientOptions, PromptOptions, PromptRequest } from './types';
 
 export class ContentialPrompt {
   apiClient: ContentialApi;
@@ -12,7 +12,10 @@ export class ContentialPrompt {
   }
 
   async prompt(options: PromptOptions) {
-    const result = await this.apiClient.stream<{ text: string }>({
+    const result = await this.apiClient.stream<{
+      response: string;
+      request?: PromptRequest;
+    }>({
       path: '/prompt',
       data: {
         prompt: options.prompt,

@@ -19,5 +19,20 @@ export interface PromptOptions {
 export type PromptOnUpdate = (data: PromptOptionsData) => void;
 
 export interface PromptOptionsData {
-  text: string;
+  response: string;
+  request?: PromptRequest;
 }
+
+export type PromptRequest = {
+  id: string;
+  created: string;
+  userId: string;
+  projectId: string;
+  prompt: string;
+  temperature: number;
+  duration: number;
+  durationText: string;
+  error?: string;
+  metadata?: unknown;
+  response?: string;
+};

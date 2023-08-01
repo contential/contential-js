@@ -1,5 +1,11 @@
 # contential
 
+## 0.0.52
+
+### Patch Changes
+
+- 02fa17f: Added request to prompt
+
 ## 0.0.51
 
 ### Patch Changes
